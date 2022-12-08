@@ -27,6 +27,10 @@ def user(skip: int = 0, limit: int = 10):
 
 @api.get('/user/{user_id}')
 def user_id(user_id: int, req: str | None=None):
+    if req:
+        return {'user_id': user_id,
+                'req': req}
+    return {'user_id': user_id}
 
 
 

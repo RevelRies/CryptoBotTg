@@ -13,6 +13,7 @@ def user(skip: int = 0, limit: int = 10):
 
 
 
+
 fake_database = {'users':[
     {
         "id":1,
